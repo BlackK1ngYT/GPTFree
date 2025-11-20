@@ -10,7 +10,7 @@ Algion provides a free alternative to OpenAI's API, offering access to advanced 
 
 ### API Configuration
 - **Base URL:** `https://api.algion.dev/v1`
-- **API Key:** `123123`
+- **API Key:** `free`
 
 ### Installation
 
@@ -24,7 +24,7 @@ pip install openai
 import openai
 
 client = openai.OpenAI(
-    api_key="123123",
+    api_key="free",
     base_url="https://api.algion.dev/v1"
 )
 
@@ -44,7 +44,7 @@ print(response.choices[0].message.content)
 import OpenAI from 'openai';
 
 const client = new OpenAI({
-  apiKey: '123123',
+  apiKey: 'free',
   baseURL: 'https://api.algion.dev/v1',
 });
 
@@ -61,7 +61,7 @@ console.log(response.choices[0].message.content);
 ```bash
 curl -X POST "https://api.algion.dev/v1/chat/completions" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer 123123" \
+  -H "Authorization: Bearer free" \
   -d '{
     "model": "gpt-4.1",
     "messages": [{"role": "user", "content": "Hello! How are you?"}]
@@ -70,6 +70,8 @@ curl -X POST "https://api.algion.dev/v1/chat/completions" \
 
 ## Available Models
 
+- `gpt-5.1`
+- `gpt-5`
 - `gpt-5-mini`
 - `gpt-4.1`
 - `gpt-4o`
@@ -77,6 +79,12 @@ curl -X POST "https://api.algion.dev/v1/chat/completions" \
 - `gpt-4-0125-preview`
 - `gpt-4`
 - `gpt-3.5-turbo`
+- `claude-sonnet-4.5`
+- `claude-haiku-4.5`
+- `claude-sonnet-4`
+- `gemini-3-pro-preview`
+- `gemini-2.5-pro`
+- `grok-code-fast-1`
 - More models coming soon!
 
 ## Features
