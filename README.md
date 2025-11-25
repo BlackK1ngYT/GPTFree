@@ -79,6 +79,7 @@ curl -X POST "https://api.algion.dev/v1/chat/completions" \
 - `gpt-4-0125-preview`
 - `gpt-4`
 - `gpt-3.5-turbo`
+- `claude-opus-4.5`
 - `claude-sonnet-4.5`
 - `claude-haiku-4.5`
 - `claude-sonnet-4`
