@@ -1,16 +1,23 @@
 # Algion - Free OpenAI-compatible API
 
-🚀 Access powerful AI models through our OpenAI-compatible API. Completely free and ready to use.
+🚀 Access powerful AI models through our OpenAI-compatible API.  Completely free and ready to use. 
 
 ## Overview
 
-Algion provides a free alternative to OpenAI's API, offering access to advanced AI models without any cost. Our API is fully compatible with OpenAI's client libraries, making it easy to integrate into your existing projects.
+Algion provides a free alternative to OpenAI's API, offering access to advanced AI models without any cost.  Our API is fully compatible with OpenAI's client libraries, making it easy to integrate into your projects.
 
 ## Quick Start
 
+### Get Your Free API Key
+
+Get your personal API key for free through our Telegram bot:
+- **Bot:** [@AlgionBot](https://t.me/AlgionBot)
+
+Simply start a chat with the bot and it will provide you with your unique API key instantly! 
+
 ### API Configuration
 - **Base URL:** `https://api.algion.dev/v1`
-- **API Key:** `free`
+- **API Key:** Get yours from [@AlgionBot](https://t.me/AlgionBot)
 
 ### Installation
 
@@ -24,7 +31,7 @@ pip install openai
 import openai
 
 client = openai.OpenAI(
-    api_key="free",
+    api_key="YOUR_API_KEY",  # Get your key from @AlgionBot
     base_url="https://api.algion.dev/v1"
 )
 
@@ -44,7 +51,7 @@ print(response.choices[0].message.content)
 import OpenAI from 'openai';
 
 const client = new OpenAI({
-  apiKey: 'free',
+  apiKey: 'YOUR_API_KEY',  // Get your key from @AlgionBot
   baseURL: 'https://api.algion.dev/v1',
 });
 
@@ -61,7 +68,7 @@ console.log(response.choices[0].message.content);
 ```bash
 curl -X POST "https://api.algion.dev/v1/chat/completions" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer free" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{
     "model": "gpt-4.1",
     "messages": [{"role": "user", "content": "Hello! How are you?"}]
@@ -92,7 +99,8 @@ curl -X POST "https://api.algion.dev/v1/chat/completions" \
 
 - ✅ **100% Free** - No hidden costs or rate limits
 - ✅ **OpenAI Compatible** - Drop-in replacement for OpenAI API
-- ✅ **No Registration** - Start using immediately
+- ✅ **Easy Registration** - Get your API key instantly via Telegram
+- ✅ **Personal API Keys** - Each user gets their own unique key
 - ✅ **Active Development** - Regular updates and new models
 
 ## API Endpoints
@@ -105,12 +113,16 @@ All endpoints follow OpenAI's API specification:
 
 ## Rate Limits
 
-Currently, there are no strict rate limits, but we ask users to be reasonable with their usage to ensure the service remains available for everyone.
+Currently, there are no strict rate limits, but we ask users to be reasonable with their usage to ensure the service remains available for everyone. 
 
 ## Status & Updates
 
-This project is currently in **Beta**. Join our [Telegram channel](https://t.me/algion) to stay updated on:
+This project is currently in **Beta**. Join our community:
 
+- **Get API Key:** [@AlgionBot](https://t.me/AlgionBot)
+- **Updates Channel:** [@algion](https://t.me/algion)
+
+Stay updated on:
 - New model releases
 - Feature announcements  
 - Service updates
@@ -118,21 +130,22 @@ This project is currently in **Beta**. Join our [Telegram channel](https://t.me/
 
 ## Contributing
 
-We welcome contributions! Whether it's bug reports, feature requests, or code contributions, feel free to get involved.
+We welcome contributions!  Whether it's bug reports, feature requests, or code contributions, feel free to get involved.
 
 ## Support
 
 - **Website:** [algion.dev](https://algion.dev)
-- **Telegram:** [@algion](https://t.me/algion)
+- **Get API Key:** [@AlgionBot](https://t.me/AlgionBot)
+- **Telegram Channel:** [@algion](https://t.me/algion)
 - **Issues:** Create an issue in this repository
 
 ## Disclaimer
 
-This service is provided as-is. While we strive for high availability, please consider this when building production applications.
+This service is provided as-is. While we strive for high availability, please consider this when building production applications. 
 
 ---
 
-**⭐ Star this repo if you find it useful!**
+⭐ **Star this repo if you find it useful!**
 
 Made with ❤️ for the developer community
 
