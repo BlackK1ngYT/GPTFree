@@ -108,7 +108,7 @@ curl -X POST "https://api.algion.dev/v1/chat/completions" \
 All endpoints follow OpenAI's API specification:
 
 - `POST /v1/chat/completions` - Chat completions
-- `POST /v1/models` - List available models
+- `GET /v1/models` - List available models
 - More endpoints coming soon!
 
 ## Rate Limits
